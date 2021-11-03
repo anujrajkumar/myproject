@@ -1,4 +1,4 @@
-name: Xcode - Build and Analyze(Continuous Integration)
+name: Xcode - Build and Analyze(Continuous Integrationo)
 
 on:
 #   push:
