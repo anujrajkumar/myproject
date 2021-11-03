@@ -1,9 +1,9 @@
 name: Xcode - Build and Analyze(Continuous Integrationo)
 
 on:
-#   push:
-#     branches: [ main ]
-  pull_request:
+ push:
+  branches: [ main ]
+ pull_request:
     branches: [ main ]
 
 jobs:
