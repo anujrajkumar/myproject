@@ -3,8 +3,8 @@ name: Xcode - Build and Analyze(Continuous Integrationo)
 on:
  push:
   branches: [ main ]
- pull_request:
-    branches: [ main ]
+#  pull_request:
+#     branches: [ main ]
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
         
       - uses: actions/setup-node@master
-      - uses: c-hive/gha-yarn-cache@v1
+#       - uses: c-hive/gha-yarn-cache@v1
       
       - name: Install node modules
         run: |
