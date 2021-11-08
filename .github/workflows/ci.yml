@@ -36,16 +36,16 @@ jobs:
 #       working-directory: ios
 #       name: Install pod dependencies
 
-    - name: Build iOS (debug)
-      run: "xcodebuild \
-         -workspace ios/myproject\myproject.xcodeproj \
-         -scheme myproject \
-        clean archive \
-        -sdk iphoneos \
-        -configuration Debug \
-        -UseModernBuildSystem=NO \
-        -archivePath $PWD/myproject \
-        CODE_SIGNING_ALLOWED=NO"
+#     - name: Build iOS (debug)
+#       run: "xcodebuild \
+#          -workspace ios/myproject\myproject.xcodeproj \
+#          -scheme myproject \
+#         clean archive \
+#         -sdk iphoneos \
+#         -configuration Debug \
+#         -UseModernBuildSystem=NO \
+#         -archivePath $PWD/myproject \
+#         CODE_SIGNING_ALLOWED=NO"
 
     - name: Compress .xcarchive
       run: zip -r -9 myproject.xcarchive.zip $PWD/myproject.xcarchive/
