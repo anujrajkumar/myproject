@@ -46,7 +46,7 @@ jobs:
         CODE_SIGNING_ALLOWED=NO"
 
     - name: Compress .xcarchive
-      run: zip -r -9 myproject.xcarchive.zip $PWD/HelloReactNative.xcarchive/
+      run: zip -r -9 myproject.xcarchive.zip $PWD/myproject.xcarchive/
 
     - uses: actions/upload-artifact@v2
       with:
