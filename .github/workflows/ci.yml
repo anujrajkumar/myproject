@@ -36,7 +36,7 @@ jobs:
 
     - name: Build iOS (debug)
       run: "xcodebuild \
-
+         -workspace ios/myproject\myproject.xcodeproj \
          -scheme myproject \
         clean archive \
         -sdk iphoneos \
