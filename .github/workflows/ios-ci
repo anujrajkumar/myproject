@@ -1,4 +1,4 @@
-name: iOS
+name: iOS-ci
 
 # on: [push]
 on:
